@@ -1,0 +1,420 @@
+{
+  "id": "f48d662e-402b-4ccd-ba39-d0616c1fdb35",
+  "name": "web.search",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "web.search",
+      "affectedContexts": [
+        {
+          "name": "web-search",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "control_lists_web_search",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "websearch-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "405a7381-68c5-4e80-8aac-ec90d6397716",
+          "required": false,
+          "dataType": "@sys.any",
+          "name": "q",
+          "value": "$q",
+          "isList": false
+        },
+        {
+          "id": "1c18a186-fe47-4054-8117-3e0442168979",
+          "required": false,
+          "dataType": "@search-engine",
+          "name": "service",
+          "value": "$service",
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1496995046787,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "7ed77640-5f4c-4339-9cc1-84971dfd2562",
+      "data": [
+        {
+          "text": "find ",
+          "userDefined": false
+        },
+        {
+          "text": "Newton laws",
+          "alias": "q",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": " in the web",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "3f1f5188-3f7f-4748-9e60-8b515636c269",
+      "data": [
+        {
+          "text": "google",
+          "alias": "service",
+          "meta": "@search-engine",
+          "userDefined": true
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "David Bowie",
+          "alias": "q",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "92b08369-34f3-43b4-9571-7416536bc852",
+      "data": [
+        {
+          "text": "search",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "04f2c10e-0f1f-44ea-bacf-571ee95a040c",
+      "data": [
+        {
+          "text": "google",
+          "alias": "service",
+          "meta": "@search-engine",
+          "userDefined": true
+        },
+        {
+          "text": " a ",
+          "userDefined": false
+        },
+        {
+          "text": "recipe for tomato soup",
+          "alias": "q",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "df361698-f321-454e-87b3-10e729b1f648",
+      "data": [
+        {
+          "text": "look up ",
+          "userDefined": false
+        },
+        {
+          "text": "Monty Python",
+          "alias": "q",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "178836df-1315-413d-9cf2-fac406793366",
+      "data": [
+        {
+          "text": "find ",
+          "userDefined": false
+        },
+        {
+          "text": "apple pie recipes",
+          "alias": "q",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "975c804e-ac4d-469c-973c-ef7090ebd9ec",
+      "data": [
+        {
+          "text": "find ",
+          "userDefined": false
+        },
+        {
+          "text": "Lady Gaga's husband",
+          "alias": "q",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": " on the Internet",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "e4465206-83f8-4e5c-8dd6-8aae1a18c0fc",
+      "data": [
+        {
+          "text": "can you find information",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "7e101eda-243d-4126-8426-14d2e38504a6",
+      "data": [
+        {
+          "text": "find ",
+          "userDefined": false
+        },
+        {
+          "text": "Pink's biography",
+          "alias": "q",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": " on ",
+          "userDefined": false
+        },
+        {
+          "text": "Wikipedia",
+          "alias": "service",
+          "meta": "@search-engine",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "51963895-8cff-456c-9359-53c48190325e",
+      "data": [
+        {
+          "text": "find ",
+          "userDefined": false
+        },
+        {
+          "text": "funny cats",
+          "alias": "q",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "3ed32156-ff88-4d2c-9d31-4cdd937ef216",
+      "data": [
+        {
+          "text": "search the Internet",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "1bb6cf7c-cebc-4dc7-816f-eaafecda0290",
+      "data": [
+        {
+          "text": "Google",
+          "alias": "service",
+          "meta": "@search-engine",
+          "userDefined": true
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "who is the president of the United States",
+          "alias": "q",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "2814002f-55ff-4337-ad5f-4deb3aab8b1f",
+      "data": [
+        {
+          "text": "web search",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "61f033aa-dc6f-4f2a-8227-744bb007c366",
+      "data": [
+        {
+          "text": "find ",
+          "userDefined": false
+        },
+        {
+          "text": "Metropolitan Museum",
+          "alias": "q",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": " on ",
+          "userDefined": false
+        },
+        {
+          "text": "Wikipedia",
+          "alias": "service",
+          "meta": "@search-engine",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "202bc440-ee8d-44bd-995e-5a7a8f7b43ea",
+      "data": [
+        {
+          "text": "search ",
+          "userDefined": false
+        },
+        {
+          "text": "how to build a house",
+          "alias": "q",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "20e95b2f-0a9d-47f3-88b2-f1c70be7dee6",
+      "data": [
+        {
+          "text": "find information about ",
+          "userDefined": false
+        },
+        {
+          "text": "Madonna",
+          "alias": "q",
+          "meta": "@sys.any",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "318820b3-ff80-47be-b77b-dc919a31041e",
+      "data": [
+        {
+          "text": "search for ",
+          "userDefined": false
+        },
+        {
+          "text": "popular wallpapers",
+          "alias": "q",
+          "meta": "@sys.any",
+          "userDefined": true
+        },
+        {
+          "text": " on ",
+          "userDefined": false
+        },
+        {
+          "text": "Yahoo",
+          "alias": "service",
+          "meta": "@search-engine",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "templates": []
+}
